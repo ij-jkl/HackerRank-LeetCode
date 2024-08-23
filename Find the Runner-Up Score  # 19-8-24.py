@@ -12,6 +12,5 @@ if __name__ == '__main__':
     for i in arr:
         if(i != max_value and runnerUp < i):
             runnerUp = i
-            #Comment to test
-            
+        
     print(runnerUp)
