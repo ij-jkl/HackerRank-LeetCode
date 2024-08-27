@@ -6,7 +6,7 @@ import textwrap
 def wrap(string, max_width):
     # L and X are auxiliar variables, im going to be using them to keep track and adding them with the max width value
     l = 0
-    x = max_width
+    
 
     result = []
     
@@ -15,9 +15,8 @@ def wrap(string, max_width):
     aux = len(string) // max_width + 1
     for _ in range(aux):
         #We append the strings from L to X, they have the lenght of the max width
-        result.append(string[l:x])
+        result.append(string[l:l + max_width])
         l += max_width
-        x += max_width
 
     return "\n".join(result)
 
