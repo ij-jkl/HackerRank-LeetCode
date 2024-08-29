@@ -3,7 +3,8 @@
 def print_formatted(number):
     
     # We need this padding to pass the output expected by Hacker Rank
-    space = len(range(2))
+    # I have to pass the number as a Binary number or its not going to pass All test cases
+    space = len(bin(number)[2:])
 
     for i in range(number):
         decimal = str(i+1)
